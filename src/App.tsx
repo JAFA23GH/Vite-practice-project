@@ -1,9 +1,8 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import Container1 from './components/Container1';
-import Container2 from './components/Container2';
-import Container3 from './components/Container3';
+
+import Container from './components/Container';
 import './App.css'
 
 
@@ -11,37 +10,12 @@ function App() {
 
   return (
     <div className='boxes'>
-      <Container1 />
-      <Container2 />
-      <Container3 />
+      <Container icon="wa" description="Solicita una cotización"/>
+      <Container icon="schedule" description="Agenda una cita"/>
+      <Container icon="cog" description="Completamos el servicio"/>
     </div>
-  );
-  
+  ); 
 
-  // return (
-  //   <>
-  //     <div>
-  //       <a href="https://vite.dev" target="_blank">
-  //         <img src={viteLogo} className="logo" alt="Vite logo" />
-  //       </a>
-  //       <a href="https://react.dev" target="_blank">
-  //         <img src={reactLogo} className="logo react" alt="React logo" />
-  //       </a>
-  //     </div>
-  //     <h1>Vite + React</h1>
-  //     <div className="card">
-  //       <button onClick={() => setCount((count) => count + 1)}>
-  //         count is {count}
-  //       </button>
-  //       <p>
-  //         Edit <code>src/App.tsx</code> and save to test HMR
-  //       </p>
-  //     </div>
-  //     <p className="read-the-docs">
-  //       Click on the Vite and React logos to learn more
-  //     </p>
-  //   </>
-  // )
 }
 
 export default App
